@@ -22,7 +22,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 from .modelos import Trecho
 
-_ARQUIVO = Path(__file__).resolve().parent.parent / "data" / "base_conhecimento_ifood_genai.csv"
+_ARQUIVO = Path(__file__).resolve().parent.parent / "data" / "base_conhecimento.csv"
 _MODELO_EMBEDDING = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
 # Vocabulário operacional que o colaborador usa x vocabulário da política.
