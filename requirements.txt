@@ -1,0 +1,7 @@
+anthropic>=2.12
+pydantic>=2.7
+scikit-learn>=1.5
+streamlit>=1.40
+pytest>=8
+# Opcional: busca semântica com embeddings multilíngues (sem ele, a busca é só lexical)
+fastembed>=0.9

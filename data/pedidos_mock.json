@@ -1,0 +1,77 @@
+{
+  "_aviso": "API de pedidos FICTÍCIA para a POC. Nenhum dado real.",
+  "pedidos": {
+    "1001": {
+      "status": "saiu_para_entrega",
+      "ocorrencia": "cliente_desistiu",
+      "causa_registrada": "cliente",
+      "valor": 54.90,
+      "pagamento": {"metodo": "cartao_credito", "status": "aprovado"},
+      "reembolsos_cliente_30d": 0,
+      "alerta_fraude": false
+    },
+    "1002": {
+      "status": "cancelado",
+      "ocorrencia": "falta_de_ingrediente",
+      "causa_registrada": "restaurante",
+      "valor": 72.30,
+      "pagamento": {"metodo": "pix", "status": "estorno_em_andamento"},
+      "reembolsos_cliente_30d": 0,
+      "alerta_fraude": false
+    },
+    "1003": {
+      "status": "saiu_para_entrega",
+      "ocorrencia": "extravio_entregador",
+      "causa_registrada": "entregador",
+      "valor": 41.00,
+      "pagamento": {"metodo": "cartao_credito", "status": "aprovado"},
+      "reembolsos_cliente_30d": 1,
+      "alerta_fraude": false
+    },
+    "1004": {
+      "status": "cancelado",
+      "ocorrencia": "cancelado_pelo_restaurante",
+      "causa_registrada": "restaurante",
+      "valor": 88.50,
+      "pagamento": {"metodo": "cartao_debito", "status": "cobrado"},
+      "reembolsos_cliente_30d": 0,
+      "alerta_fraude": false
+    },
+    "1005": {
+      "status": "entregue",
+      "ocorrencia": "cliente_relata_nao_recebimento",
+      "causa_registrada": "indefinida",
+      "valor": 39.90,
+      "pagamento": {"metodo": "cartao_credito", "status": "aprovado"},
+      "reembolsos_cliente_30d": 0,
+      "alerta_fraude": false
+    },
+    "1006": {
+      "status": "cancelado",
+      "ocorrencia": "erro_do_app",
+      "causa_registrada": "app",
+      "valor": 120.00,
+      "pagamento": {"metodo": "cartao_credito", "status": "aprovado"},
+      "reembolsos_cliente_30d": 0,
+      "alerta_fraude": true
+    },
+    "1007": {
+      "status": "saiu_para_entrega",
+      "ocorrencia": "erro_do_restaurante",
+      "causa_registrada": "restaurante",
+      "valor": 65.00,
+      "pagamento": {"metodo": "cartao_credito", "status": "aprovado"},
+      "reembolsos_cliente_30d": 4,
+      "alerta_fraude": false
+    },
+    "1008": {
+      "status": "aguardando_preparo",
+      "ocorrencia": "cliente_solicitou_cancelamento",
+      "causa_registrada": "cliente",
+      "valor": 33.40,
+      "pagamento": {"metodo": "pix", "status": "aprovado"},
+      "reembolsos_cliente_30d": 0,
+      "alerta_fraude": false
+    }
+  }
+}

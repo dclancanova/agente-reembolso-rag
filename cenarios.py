@@ -1,0 +1,33 @@
+"""Cenários de teste usados pela CLI, pela interface e pelos testes automatizados."""
+
+CENARIOS = [
+    # (pergunta, resultado esperado, confiança esperada)
+    ("O cliente quer reembolso, mas o pedido já saiu para entrega. Ainda é permitido?",
+     "pedir_informacao", "media"),
+    ("O restaurante cancelou por falta de ingrediente. O reembolso é automático?",
+     "reembolso_total", "media"),
+    ("O cliente foi cobrado após o cancelamento. O que fazer?",
+     "verificar_estorno", "media"),
+    ("Pedido 1001 saiu para entrega e o cliente desistiu, quer reembolso.",
+     "validacao_manual", "baixa"),
+    ("Pedido 1002: restaurante cancelou por falta de ingrediente. Reembolso é automático?",
+     "reembolso_total", "alta"),
+    ("Pedido 1003 já saiu para entrega e o entregador extraviou o pedido.",
+     "reembolso_total", "alta"),
+    ("Pedido 1004 foi cancelado, mas o cliente diz que foi cobrado.",
+     "validacao_manual", "baixa"),
+    ("Pedido 1005 consta como entregue, mas não chegou.",
+     "validacao_manual", "baixa"),
+    ("Pedido 1006 foi cancelado por erro do app, cliente quer reembolso.",
+     "antifraude", "baixa"),
+    ("Pedido 1007 saiu para entrega com erro do restaurante, cliente pede reembolso.",
+     "antifraude", "baixa"),
+    ("Pedido 1008 ainda está aguardando preparo e o cliente desistiu. Tem estorno?",
+     "estorno_automatico", "alta"),
+    ("Pedido saiu para entrega, mas o cliente afirma que não autorizou.",
+     "validacao_manual", "baixa"),
+    ("Estorno parcial é possível?",
+     "orientacao", "alta"),
+    ("Qual o horário de funcionamento do refeitório?",
+     "sem_base", "baixa"),
+]
